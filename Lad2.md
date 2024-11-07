@@ -8,6 +8,7 @@ Tác Nhân (Actors)
 - Đồng Hồ Hệ Thống (System Clock) - Đại diện cho chức năng theo dõi thời gian cần thiết cho xử lý bảng lương.
 - Máy In (Printer) - Sử dụng để in các báo cáo hoặc tài liệu bảng lương.
 - Hệ Thống Ngân Hàng (Bank System) - Sử dụng để xử lý các giao dịch cho bảng lương.
+##heading2
 1.1 Các Trường Hợp Sử Dụng (Use Cases)
 - Chọn Phương Thức Thanh Toán (Select Payment) - Cho phép nhân viên chọn phương thức thanh toán.
 - Quản Lý Thẻ Chấm Công (Maintain Timecard) - Nhân viên, có liên kết với Cơ Sở Dữ Liệu Dự Án, quản lý thẻ chấm công của họ tại đây.
@@ -17,7 +18,7 @@ Tác Nhân (Actors)
 - Tạo Báo Cáo Hành Chính (Create Administrative Report) - Quản Trị Viên Tiền Lương tạo báo cáo.
 - Quản Lý Thông Tin Nhân Viên (Maintain Employee Info) - Quản Trị Viên Tiền Lương quản lý dữ liệu nhân viên.
 - Chạy Bảng Lương (Run Payroll) - Tích hợp với Máy In và Hệ Thống Ngân Hàng để xử lý bảng lương.
-  
+  ###heading3
 ```java
 import java.util.HashMap;
 import java.util.Map;
