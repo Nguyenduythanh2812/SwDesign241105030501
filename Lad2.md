@@ -23,7 +23,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-// Timecard class represents each timecard record
+
+// Lớp timecard đại diện cho mỗi bản ghi timecard
 class Timecard {
     private String employeeId;
     private String date;
@@ -57,7 +58,7 @@ class Timecard {
     }
 }
 
-// TimecardManager class manages the operations on timecards
+// Lớp TimecardManager quản lý các thao tác trên timecard
 class TimecardManager {
     private Map<String, Timecard> timecards = new HashMap<>(); // Key: employeeId + date
 
@@ -73,7 +74,7 @@ class TimecardManager {
         }
     }
 
-    // Update an existing timecard
+  // Cập nhật thẻ thời gian hiện có
     public void updateTimecard(String employeeId, String date, double hoursWorked) {
         String key = employeeId + "-" + date;
         Timecard timecard = timecards.get(key);
@@ -85,7 +86,7 @@ class TimecardManager {
         }
     }
 
-    // Delete a timecard
+   // Xóa thẻ thời gian
     public void deleteTimecard(String employeeId, String date) {
         String key = employeeId + "-" + date;
         if (timecards.remove(key) != null) {
@@ -95,7 +96,7 @@ class TimecardManager {
         }
     }
 
-    // Display all timecards
+ // Hiển thị tất cả các timecard
     public void displayTimecards() {
         if (timecards.isEmpty()) {
             System.out.println("No timecards found.");
